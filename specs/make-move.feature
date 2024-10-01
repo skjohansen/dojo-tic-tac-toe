@@ -16,23 +16,16 @@ To understand the game can one think of a matrix, consiting of 3 rows and 3 colu
 
 ```
 
-Scenario: No peices on the gameboard
-    Given its the first turn of the first player
-    And the gameboard is empty
-    When the player tries to place a peice in "A1"
-    Then is the move allowed
+Scenario: Make ligal move
+    Given there is no piece in A1
+    And its "player1" turn
+    When "player1" tries to place a piece in A1
+    Then the move is validated as a legal move
+    And is the piece placed in A1
 
-Scenario: Leagal move
-    Given there is peices places in
-        | Field | Peice |
-        | A1    | x     |
-    When the player tries to place a peice in "A2"
-    Then is the move allowed
-
-Scenario: Iligeal move
-    Given there is peices places in
-        | Field | Peice |
-        | A1    | x     |
-    When the player tries to place a peice in "A1"
-    Then is the move not allowed
-
+Scenario: Make illigal move
+    Given there is a piece in A1
+    And its "player1" turn
+    When "player1" tries to place a piece in A1
+    Then the move is validated as an illigal move
+    And the player needs to try to make another move
