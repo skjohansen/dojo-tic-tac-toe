@@ -17,4 +17,4 @@ This is roughy how long different elemants have taken so far
 * Updating Readme with plan: 12 min
 * Writing of ADRs: 2h
 * Setting up issues based on [skecth of plan](plan/plan02.jpg): 30 min
-* Specification of indentified features of the game (in Gherkin): 2h
+* Specification of indentified features of the game (in Gherkin): 3h
