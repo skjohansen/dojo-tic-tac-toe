@@ -7,8 +7,8 @@ Implementation of the game Tic Tac Toe following "modern softeware development" 
 A plan for the project was initally made on paper, these plan is referenced in issuse and other documenetation thoughout the project.
 
 * 01: Thoughs while reading the instructions: [Inital thoughts](plan/plan01.jpg)
-* 02: A first sketch of a plan for the development: [Skecth of plan](plan/plan02.jpg) see also #6
-* 03: Inital outline of functionality and features of the Tic Tac Toe game: [Functionality and featues](plan/plan03.jpg), see also #3
+* 02: A first sketch of a plan for the development: [Skecth of plan](plan/plan02.jpg) see also [issue 04](https://github.com/skjohansen/dojo-tic-tac-toe/issues/4)
+* 03: Inital outline of functionality and features of the Tic Tac Toe game: [Functionality and featues](plan/plan03.jpg), see also [issue 3](https://github.com/skjohansen/dojo-tic-tac-toe/issues/3)
 
 ## Log of time
 
