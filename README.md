@@ -18,3 +18,5 @@ This is roughy how long different elemants have taken so far
 * Writing of ADRs: 2h
 * Setting up issues based on [skecth of plan](plan/plan02.jpg): 30 min
 * Specification of indentified features of the game (in Gherkin): 3h
+* Documentation of project plan: 15min
+* Empty dotnet projects: 30min
