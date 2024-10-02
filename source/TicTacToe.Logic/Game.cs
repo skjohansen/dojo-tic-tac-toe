@@ -8,9 +8,11 @@ namespace TicTacToe.Logic
 {
     public class Game
     {
+        public List<Player> Players { get; set; } = new List<Player>();
         public void AddPlayers()
         {
-            throw new NotImplementedException();
+            Players.Add(new Player { Name = "player1", Marker = "x" });
+            Players.Add(new Player { Name = "player2", Marker = "o" });
         }
     }
 }
