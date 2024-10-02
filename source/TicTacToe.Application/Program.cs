@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        GameRunner gameRunner = new GameRunner(new ConsoleWrapper());
         Console.WriteLine("Tic Tac Toe");
     }
 }
