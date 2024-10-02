@@ -57,23 +57,14 @@ public class GameTests
 
 
     [Fact]
-    public void StartGame_NoPlayers_CurrentPlayerIndexIsNull()
-    {
-        // Arrange
-        var sut = new Game();
-        // Act
-        sut.Start();
-        // Assert
-        Assert.Equal(sut.CurrentPlayerIndex, null);
-    }
-
-    [Fact]
-    public void StartGame_NoPlayers_GameplayExeption()
+    public void StartGame_NoPlayers_GameExeption()
     {
         // Arrange
         var sut = new Game();
         // Act + Assert
-        Assert.Throws<GameExecption>(() => sut.Start());
+        var ex = Assert.Throws<GameExecption>(() => sut.Start());
+        Assert.Equal("Unable to start game, no players added", ex.Message);
+        Assert.Equal(sut.CurrentPlayerIndex, null);
     }
     
 }

@@ -18,7 +18,7 @@ namespace TicTacToe.Logic
 
         public void Start()
         {
-            
+            throw new GameExecption("Unable to start game, no players added");
         }
     }
 }
