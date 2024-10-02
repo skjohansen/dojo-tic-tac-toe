@@ -9,6 +9,7 @@ namespace TicTacToe.Logic
     public class Game
     {
         public List<Player> Players { get; set; } = new List<Player>();
+        public int? CurrentPlayerIndex { get; set; }
         public void AddPlayers()
         {
             Players.Add(new Player { Name = "player1", Marker = "x" });
@@ -17,7 +18,7 @@ namespace TicTacToe.Logic
 
         public void Start()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

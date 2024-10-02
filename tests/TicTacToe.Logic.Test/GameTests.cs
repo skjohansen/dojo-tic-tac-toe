@@ -57,13 +57,15 @@ public class GameTests
 
 
     [Fact]
-    public void StartGame_NoPlayers_CantStartGame()
+    public void StartGame_NoPlayers_CurrentPlayerIndex()
     {
         // Arrange
         var game = new Game();
         // Act
         game.Start();
         // Assert
-        //Assert.Equal(2, game.Players.Count);
+        Assert.Equal(game.CurrentPlayerIndex, null);
     }
+
+
 }
