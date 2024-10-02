@@ -16,7 +16,7 @@ namespace TicTacToe.Application
 
         public void Welcome()
         {
-            throw new NotImplementedException();
+            _console.WriteLine("Welcome to Tic Tac Toe!");
         }
     }
 }
