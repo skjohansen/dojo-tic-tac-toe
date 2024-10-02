@@ -25,3 +25,4 @@ This is roughy how long different elemants have taken so far
 * Documentation of project plan: 15min
 * Empty dotnet projects: 30min
 * State diagram of gameplay: 40min
+* Implementation: 1h
