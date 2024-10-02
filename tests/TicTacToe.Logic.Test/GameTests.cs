@@ -67,4 +67,13 @@ public class GameTests
         Assert.Equal(sut.CurrentPlayerIndex, null);
     }
 
+    [Fact]
+    public void StartGame_NoPlayers_GameplayExeption()
+    {
+        // Arrange
+        var sut = new Game();
+        // Act + Assert
+        Assert.Throws<GameExecption>(() => sut.Start());
+    }
+    
 }
