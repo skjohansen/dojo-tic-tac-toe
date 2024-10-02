@@ -8,6 +8,7 @@ namespace TicTacToe.Logic.Test;
 
 public class GameTests
 {
+    #region AddPlayers
     [Fact]
     public void Init_NoPlayers_NoPlayers()
     {
@@ -52,6 +53,17 @@ public class GameTests
         Assert.Equal("player2", game.Players[1].Name);
         Assert.Equal("o", game.Players[1].Marker);
     }
+    #endregion
 
 
+    [Fact]
+    public void StartGame_NoPlayers_CantStartGame()
+    {
+        // Arrange
+        var game = new Game();
+        // Act
+        game.Start();
+        // Assert
+        //Assert.Equal(2, game.Players.Count);
+    }
 }

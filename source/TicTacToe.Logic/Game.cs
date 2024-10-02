@@ -14,5 +14,10 @@ namespace TicTacToe.Logic
             Players.Add(new Player { Name = "player1", Marker = "x" });
             Players.Add(new Player { Name = "player2", Marker = "o" });
         }
+
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
