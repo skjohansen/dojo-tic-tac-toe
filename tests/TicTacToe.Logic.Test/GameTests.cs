@@ -13,59 +13,58 @@ public class GameTests
     public void Init_NoPlayers_NoPlayers()
     {
         // Arrange
-        var game = new Game();
+        var sut = new Game();
         
         // Assert
-        Assert.Equal(0, game.Players.Count);
+        Assert.Equal(0, sut.Players.Count);
     }
 
     [Fact]
     public void AddPlayers_NoPlayers_TwoPlayersAdded()
     {
         // Arrange
-        var game = new Game();
+        var sut = new Game();
         // Act
-        game.AddPlayers();
+        sut.AddPlayers();
         // Assert
-        Assert.Equal(2, game.Players.Count);
+        Assert.Equal(2, sut.Players.Count);
     }
 
     [Fact]
     public void AddPlayers_TwoPlayers_Player1()
     {
         // Arrange
-        var game = new Game();
+        var sut = new Game();
         // Act
-        game.AddPlayers();
+        sut.AddPlayers();
         // Assert
-        Assert.Equal("player1", game.Players[0].Name);
-        Assert.Equal("x", game.Players[0].Marker);
+        Assert.Equal("player1", sut.Players[0].Name);
+        Assert.Equal("x", sut.Players[0].Marker);
     }
 
     [Fact]
     public void AddPlayers_TwoPlayers_Player2()
     {
         // Arrange
-        var game = new Game();
+        var sut = new Game();
         // Act
-        game.AddPlayers();
+        sut.AddPlayers();
         // Assert
-        Assert.Equal("player2", game.Players[1].Name);
-        Assert.Equal("o", game.Players[1].Marker);
+        Assert.Equal("player2", sut.Players[1].Name);
+        Assert.Equal("o", sut.Players[1].Marker);
     }
     #endregion
 
 
     [Fact]
-    public void StartGame_NoPlayers_CurrentPlayerIndex()
+    public void StartGame_NoPlayers_CurrentPlayerIndexIsNull()
     {
         // Arrange
-        var game = new Game();
+        var sut = new Game();
         // Act
-        game.Start();
+        sut.Start();
         // Assert
-        Assert.Equal(game.CurrentPlayerIndex, null);
+        Assert.Equal(sut.CurrentPlayerIndex, null);
     }
-
 
 }
