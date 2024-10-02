@@ -22,6 +22,9 @@ The following order is most likely the one by which the implemention of features
 1. Announce Winner
 1. Show final gameboard
 
+See the [state diagram of gameplay](gameplay.md) for reasoning
+
+
 Additional features I would like to make the application follow modern development:
 * Dev container
 * Build script
